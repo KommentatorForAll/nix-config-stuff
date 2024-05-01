@@ -27,7 +27,7 @@
     vlc
     filelight
     libreoffice
-    kdeconnect-kde
+    kdePackages.kdeconnect-kde
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
