@@ -2,7 +2,7 @@
 
 {
 
-  virtualization.docker.enable = true;
+  virtualisation.docker.enable = true;
 
   environment.systemPackages = with pkgs; [
     python3
@@ -12,10 +12,12 @@
     clang-tools
     jdk22
     jdk8
-    jdk12
+    jdk11
     jetbrains.clion
     jetbrains.pycharm-professional
-    jetbrains.idea-professional
+    jetbrains.idea-ultimate
     sqlitebrowser
   ];
+
+  nixpkgs.config.allowUnfree = true;
 }
