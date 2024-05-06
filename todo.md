@@ -1,0 +1,10 @@
+- [ ] keyboard layout
+- [ ] vivaldi startup
+- [ ] jetbrains setup
+- [ ] 4d minesweeper
+- [ ] vivaldi config (or just use their accounts?)
+- [ ] smb stuff
+    - [ ] samba
+    - [ ] enable avahi-daemon.service
+    - [ ] kio-extras (?)
+    - [ ] libkdsoap (?)

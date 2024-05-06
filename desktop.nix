@@ -11,6 +11,8 @@
     };
   };
 
+  hardware.pulseaudio.enable = true;
+
   xdg.portal = {
     enable = true;
     wlr.enable = true;
@@ -28,6 +30,8 @@
     filelight
     libreoffice
     kdePackages.kdeconnect-kde
+    kdePackages.plasma-pa
+    _4d-minesweeper
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
