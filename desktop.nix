@@ -9,6 +9,12 @@
       enable = true;
       wayland.enable = true;
     };
+    gvfs.enable = true;
+
+    xserver = {
+      xkb.layout = "us";
+      xkb.variant = "altgr-intl";
+    };
   };
 
   hardware.pulseaudio.enable = true;
@@ -24,6 +30,7 @@
     xdg-utils
     flameshot
     vivaldi
+    vivaldi-ffmpeg-codecs
     joplin
     joplin-desktop
     vlc
@@ -32,6 +39,7 @@
     kdePackages.kdeconnect-kde
     kdePackages.plasma-pa
     _4d-minesweeper
+    syncthingtray
   ];
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [

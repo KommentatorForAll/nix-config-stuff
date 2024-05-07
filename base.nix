@@ -17,5 +17,11 @@
     iotop
     wget
     curl
+    fastfetch
+    syncthing
+    nix-tree
+    ffmpeg
   ];
+
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 }
