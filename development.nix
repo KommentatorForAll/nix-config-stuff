@@ -17,7 +17,6 @@
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
     sqlitebrowser
+    tokei
   ];
-
-  nixpkgs.config.allowUnfree = true;
 }

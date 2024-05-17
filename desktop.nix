@@ -50,4 +50,32 @@
     kwrited
   ];
 
+  # Vivaldi and some IDEs require this
+
+  nixpkgs.config.allowUnfree = true;
+
+  nixpkgs.overlays = [
+    (self: super: {
+      vivaldi =
+        let
+          pkgsPatched =
+            (import (
+              self.applyPatches {
+                src = self.path;
+                patches = [
+                  (self.fetchpatch {
+                    url = "https://github.com/NixOS/nixpkgs/pull/292148.patch";
+                    hash = "sha256-gaH4UxKi2s7auoaTmbBwo0t4HuT7MwBuNvC/z2vvugE=";
+                  })
+                ];
+              }
+            )) {
+              inherit (config.nixpkgs) config;
+            };
+        in
+          pkgsPatched.vivaldi.override {
+            qt = self.qt6;
+          };
+    })
+  ];
 }

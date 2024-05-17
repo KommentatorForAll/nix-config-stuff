@@ -1,5 +1,5 @@
 - [x] keyboard layout
-- [ ] vivaldi startup
+- [x] vivaldi startup
 - [ ] jetbrains setup
     - .config/JetBrains/IntelliJIdea2024.1/options/jdk.table.xml
       environment = {
@@ -10,7 +10,7 @@
     };
   };
 - [x] 4d minesweeper
-- [ ] vivaldi config (or just use their accounts?)
+- [x] vivaldi config (or just use their accounts?)
 - [ ] smb stuff
     - [ ] samba
     - [ ] enable avahi-daemon.service
