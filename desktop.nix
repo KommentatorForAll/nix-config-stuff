@@ -38,6 +38,9 @@
     libreoffice
     kdePackages.kdeconnect-kde
     kdePackages.plasma-pa
+    kdePackages.korganizer
+    kdePackages.akonadi # dep for korganizer for caldav support
+    kdePackages.kdepim-runtime # dep for korganizer for caldav support
     _4d-minesweeper
     syncthingtray
   ];
