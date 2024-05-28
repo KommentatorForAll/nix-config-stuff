@@ -21,6 +21,7 @@
     syncthing
     nix-tree
     ffmpeg
+    killall
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
